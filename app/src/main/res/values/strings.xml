@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">PlayListMaker</string>
+    <!--Для первого экрана-->
+    <string name="app_name">Playlist Maker</string>
+    <string name="app_find" translatable="false">Поиск</string>
+    <string name="app_media" translatable="false">Медиатека</string>
+    <string name="app_settings" translatable="false">Настройки</string>
+    <!--Для второго экрана-->
+    <string name="app_settings_name_activity" translatable="false">Настройки</string>
+    <string name="app_settings_theme" translatable="false">Темная тема</string>
+    <string name="app_settings_share" translatable="false">Поделиться приложением</string>
+    <string name="app_settings_help" translatable="false">Написать в поддержку</string>
+    <string name="app_settings_doc" translatable="false">Пользовательское соглашение</string>
+    <!--Для экранов отсутствующих в задании-->
+    <string name="text_home" translatable="false">Home</string>
 </resources>

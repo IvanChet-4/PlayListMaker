@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Экран настроек приложения плей лист-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_background"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical">
+
+    <!--Кнопка назад и заголовок-->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/settings_margin40dp_PLM"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/settings_padding20dp_PLM"
+            android:paddingTop="@dimen/settings_padding14dp_PLM">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_settings_Home"
+            android:layout_width="@dimen/settings_param16dp_PLM"
+            android:layout_height="@dimen/settings_param16dp_PLM"
+            android:layout_marginTop="@dimen/settings_margin10dp_PLM"
+            android:backgroundTint="@color/settings_background"
+            android:paddingLeft="@dimen/settings_padding0dp_PLM"
+            android:paddingRight="@dimen/settings_padding0dp_PLM"
+            app:icon="@drawable/settings_arrow_back"
+            app:iconTint="@color/settings_text_title" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/settings_margin28dp_PLM"
+            android:gravity="center"
+            android:paddingTop="@dimen/settings_padding2dp_PLM"
+            android:paddingBottom="@dimen/settings_padding2dp_PLM"
+            android:text="@string/app_settings"
+            android:textAllCaps="false"
+            android:textColor="@color/settings_text_title"
+            android:textSize="@dimen/settings_text22sp_PLM"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--Темная тема-->
+    <com.google.android.material.button.MaterialButton
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/button_settings_DarkTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/settings_background"
+        android:gravity="left"
+        android:paddingStart="@dimen/settings_padding16dp_PLM"
+        android:paddingTop="@dimen/settings_padding21dp_PLM"
+        android:paddingEnd="@dimen/settings_padding35dp_PLM"
+        android:paddingBottom="@dimen/settings_padding21dp_PLM"
+        android:layout_marginBottom="0dp"
+        android:text="@string/app_settings_theme"
+        android:textAllCaps="false"
+        android:textColor="@color/settings_text_PLM"
+        android:textSize="@dimen/settings_text16sp_PLM"
+        app:icon="@drawable/settings_dark_theme"
+        app:iconGravity="end"
+        app:iconTint="@color/settings_image_PLM"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Поделиться-->
+    <com.google.android.material.button.MaterialButton
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/button_settings_Share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/settings_background"
+        android:gravity="left"
+        app:strokeColor="@color/settings_background"
+        android:layout_marginTop="0dp"
+        android:paddingStart="@dimen/settings_padding16dp_PLM"
+        android:paddingTop="@dimen/settings_padding21dp_PLM"
+        android:paddingEnd="@dimen/settings_padding16dp_PLM"
+        android:paddingBottom="@dimen/settings_padding21dp_PLM"
+        android:text="@string/app_settings_share"
+        android:textAllCaps="false"
+        android:textColor="@color/settings_text_PLM"
+        android:textSize="@dimen/settings_text16sp_PLM"
+        app:icon="@drawable/settings_share"
+        app:iconGravity="end"
+        app:iconTint="@color/settings_image_PLM" />
+
+    <!--Написать в поддержку-->
+    <com.google.android.material.button.MaterialButton
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/button_settings_Support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/settings_background"
+        android:gravity="left"
+        android:paddingStart="@dimen/settings_padding16dp_PLM"
+        android:paddingTop="@dimen/settings_padding21dp_PLM"
+        android:paddingEnd="@dimen/settings_padding14dp_PLM"
+        android:paddingBottom="@dimen/settings_padding21dp_PLM"
+        android:text="@string/app_settings_help"
+        android:textAllCaps="false"
+        android:textColor="@color/settings_text_PLM"
+        android:textSize="@dimen/settings_text16sp_PLM"
+        app:icon="@drawable/settings_support"
+        app:iconGravity="end"
+        app:iconTint="@color/settings_image_PLM" />
+
+    <!--Пользовательское соглашение-->
+    <com.google.android.material.button.MaterialButton
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/button_settings_Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/settings_background"
+        android:gravity="left"
+        android:paddingStart="@dimen/settings_padding16dp_PLM"
+        android:paddingTop="@dimen/settings_padding21dp_PLM"
+        android:paddingEnd="@dimen/settings_padding20dp_PLM"
+        android:paddingBottom="@dimen/settings_padding21dp_PLM"
+        android:text="@string/app_settings_doc"
+        android:textAllCaps="false"
+        android:textColor="@color/settings_text_PLM"
+        android:textSize="@dimen/settings_text16sp_PLM"
+        app:icon="@drawable/settings_arrow_forward"
+        app:iconGravity="end"
+        app:iconTint="@color/settings_image_PLM" />
+</LinearLayout>

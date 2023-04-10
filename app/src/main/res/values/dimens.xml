@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Для первого экрана-->
+    <dimen name="main_padding10dp_PLM">10dp</dimen>
+    <dimen name="main_padding14dp_PLM">14dp</dimen>
+    <dimen name="main_padding16dp_PLM">16dp</dimen>
+    <dimen name="main_margin16dp_PLM">16dp</dimen>
+    <dimen name="main_margin40dp_PLM">40dp</dimen>
+    <dimen name="main_margin210dp_PLM">210dp</dimen>
+    <dimen name="main_text22sp_PLM">22sp</dimen>
+    <dimen name="main_text_padding2dp_PLM">2dp</dimen>
+    <dimen name="main_radius16dp_PLM">16dp</dimen>
+    <!--Для второго экрана-->
+    <dimen name="settings_text16sp_PLM">16sp</dimen>
+    <dimen name="settings_text22sp_PLM">22sp</dimen>
+    <dimen name="settings_padding0dp_PLM">0dp</dimen>
+    <dimen name="settings_padding2dp_PLM">2dp</dimen>
+    <dimen name="settings_padding14dp_PLM">14dp</dimen>
+    <dimen name="settings_padding16dp_PLM">16dp</dimen>
+    <dimen name="settings_padding20dp_PLM">20dp</dimen>
+    <dimen name="settings_padding21dp_PLM">21dp</dimen>
+    <dimen name="settings_padding35dp_PLM">35dp</dimen>
+    <dimen name="settings_padding64dp_PLM">64dp</dimen>
+    <dimen name="settings_margin6dp_PLM">6dp</dimen>
+    <dimen name="settings_margin10dp_PLM">10dp</dimen>
+    <dimen name="settings_margin28dp_PLM">28dp</dimen>
+    <dimen name="settings_margin40dp_PLM">40dp</dimen>
+    <dimen name="settings_param16dp_PLM">16dp</dimen>
+</resources>
