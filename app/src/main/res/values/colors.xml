@@ -13,6 +13,7 @@
     <color name="main_text_PLM">#1A1B22</color>
     <!--Для второго экрана-->
     <color name="settings_background">#F5F5F5</color>
+    <color name="settings_background_button">#FFFFFF</color>
     <color name="settings_text_title">#1A1B22</color>
     <color name="settings_text_PLM">#000000</color>
     <color name="settings_image_PLM">#AEAFB4</color>

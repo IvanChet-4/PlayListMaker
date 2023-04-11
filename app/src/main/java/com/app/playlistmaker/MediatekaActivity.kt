@@ -12,11 +12,12 @@ class MediatekaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mediateka)
 
-        val button_mediateka_Home = findViewById<Button>(R.id.button_mediateka_Home)
+        val mediatekaHome = findViewById<Button>(R.id.button_mediateka_Home)
 
-        button_mediateka_Home.setOnClickListener {
+        mediatekaHome.setOnClickListener {
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
+            finish()
         }
     }
 }

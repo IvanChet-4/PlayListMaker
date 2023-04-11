@@ -11,23 +11,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
-        val main_activity_button_Find = findViewById<Button>(R.id.button_Find)
-        val main_activity_button_Settings = findViewById<Button>(R.id.button_Settings)
-        val main_activity_button_Media = findViewById<Button>(R.id.button_Media)
+        val mainFind = findViewById<Button>(R.id.button_Find)
+        val mainSettings = findViewById<Button>(R.id.button_Settings)
+        val mainMedia = findViewById<Button>(R.id.button_Media)
 
-        main_activity_button_Find.setOnClickListener {
+        mainFind.setOnClickListener {
             val displayIntent = Intent(this, FinderActivity::class.java)
             startActivity(displayIntent)
+            finish()
         }
 
-        main_activity_button_Settings.setOnClickListener {
+        mainSettings.setOnClickListener {
             val displayIntent = Intent(this, SettingsActivity::class.java)
             startActivity(displayIntent)
+            finish()
         }
 
-        main_activity_button_Media.setOnClickListener {
+        mainMedia.setOnClickListener {
             val displayIntent = Intent(this, MediatekaActivity::class.java)
             startActivity(displayIntent)
+            finish()
         }
     }
 }

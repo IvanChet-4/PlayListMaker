@@ -12,11 +12,12 @@ class FinderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finder)
 
-        val button_finder_Home = findViewById<Button>(R.id.button_finder_Home)
+        val finderHome = findViewById<Button>(R.id.button_finder_Home)
 
-        button_finder_Home.setOnClickListener {
+        finderHome.setOnClickListener {
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
+            finish()
         }
     }
 }

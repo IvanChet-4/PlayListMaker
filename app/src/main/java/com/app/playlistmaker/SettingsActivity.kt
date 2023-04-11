@@ -10,16 +10,12 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        val button_settings_Home = findViewById<Button>(R.id.button_settings_Home)
-        val button_settings_DarkTheme = findViewById<Button>(R.id.button_settings_DarkTheme)
-        val button_settings_Share = findViewById<Button>(R.id.button_settings_Share)
-        val button_settings_Support = findViewById<Button>(R.id.button_settings_Support)
-        val button_settings_Confirm = findViewById<Button>(R.id.button_settings_Confirm)
+        val settingsHome = findViewById<Button>(R.id.button_settings_Home)
 
-        button_settings_Home.setOnClickListener {
+        settingsHome.setOnClickListener {
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
+            finish()
         }
-
     }
 }
