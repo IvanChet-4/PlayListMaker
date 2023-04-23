@@ -29,20 +29,20 @@
             app:icon="@drawable/settings_arrow_back"
             app:iconTint="@color/settings_text_title"
             tools:ignore="TouchTargetSizeCheck" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/margin28dp"
+            android:fontFamily="@font/ys_display_medium"
             android:gravity="center"
             android:paddingTop="@dimen/padding2dp"
             android:paddingBottom="@dimen/padding2dp"
             android:text="@string/app_settings"
             android:textAllCaps="false"
             android:textColor="@color/settings_text_title"
-            android:textSize="@dimen/text22sp"
-            android:fontFamily="@font/ys_display_medium"
-            />
+            android:textSize="@dimen/text22sp" />
     </LinearLayout>
 
     <!--Темная тема-->
