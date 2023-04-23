@@ -25,62 +25,26 @@
         android:paddingTop="@dimen/padding2dp"
         android:paddingBottom="@dimen/padding2dp"
         android:layout_marginBottom="@dimen/margin40dp"
-        />
+        android:fontFamily="@font/ys_display_medium" />
 
     <!--Первая кнопка-->
     <com.google.android.material.button.MaterialButton
+        style="@style/Theme.Button.main_activity"
         android:id="@+id/button_Find"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/white"
         android:text="@string/app_find"
-        android:textColor="@color/main_text_PLM"
-        android:textSize="@dimen/text22sp"
-        app:icon="@drawable/main_search"
-        app:iconGravity="textStart"
-        app:iconTint="@color/main_text_PLM"
-        app:iconPadding="@dimen/padding10dp"
-        app:cornerRadius="@dimen/radius16dp"
-        android:layout_marginBottom="@dimen/margin16dp"
-        />
+        app:icon="@drawable/main_search" />
 
     <!--Вторая кнопка-->
     <com.google.android.material.button.MaterialButton
+        style="@style/Theme.Button.main_activity"
         android:id="@+id/button_Media"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/white"
         android:text="@string/app_media"
-        android:textColor="@color/main_text_PLM"
-        android:textSize="@dimen/text22sp"
-        app:icon="@drawable/main_laibrary"
-        app:iconGravity="textStart"
-        app:iconTint="@color/main_text_PLM"
-        app:iconPadding="@dimen/padding10dp"
-        app:cornerRadius="@dimen/radius16dp"
-        android:layout_marginBottom="@dimen/margin16dp"
-        />
+        app:icon="@drawable/main_laibrary" />
 
     <!--Третья кнопка-->
     <com.google.android.material.button.MaterialButton
+        style="@style/Theme.Button.main_activity"
         android:id="@+id/button_Settings"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/white"
         android:text="@string/app_settings"
-        android:textColor="@color/main_text_PLM"
-        android:textSize="@dimen/text22sp"
-        app:icon="@drawable/main_settings"
-        app:iconGravity="textStart"
-        app:iconTint="@color/main_text_PLM"
-        app:iconPadding="@dimen/padding10dp"
-        app:cornerRadius="@dimen/radius16dp"
-        android:layout_marginBottom="@dimen/margin16dp"
-        />
+        app:icon="@drawable/main_settings" />
     </LinearLayout>
