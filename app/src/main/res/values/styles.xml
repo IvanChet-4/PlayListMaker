@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Кнопки главного экрана-->
+    <style name="Theme.Button.main_activity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/settings_background_button</item>
+        <item name="android:textColor">@color/main_text_PLM</item>
+        <item name="android:textSize">@dimen/text22sp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/main_text_PLM</item>
+        <item name="iconPadding">@dimen/padding10dp</item>
+        <item name="cornerRadius">@dimen/radius16dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin4dp</item>
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+    </style>
+
+    <!--Кнопки на экране настроек-->
+    <style name="Theme.Button.activity_settings" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:background">@drawable/border_not</item>
+        <item name="android:backgroundTint">@color/settings_background_button</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/padding16dp</item>
+        <item name="android:paddingTop">@dimen/padding21dp</item>
+        <item name="android:paddingBottom">@dimen/padding21dp</item>
+        <item name="android:paddingEnd">@dimen/padding21dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/text16sp</item>
+        <item name="android:fontFamily">@font/ys_text_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/settings_text_PLM</item>
+        <item name="iconTint">@color/settings_image_PLM</item>
+        <item name="iconGravity">end</item>
+    </style>
+
+
+
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/settings_background_button</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
