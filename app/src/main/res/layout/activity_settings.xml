@@ -17,6 +17,7 @@
         android:orientation="horizontal"
         android:paddingLeft="@dimen/padding20dp"
         android:paddingTop="@dimen/padding14dp">
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_settings_Home"
             android:layout_width="@dimen/paramHW16dp"
@@ -26,7 +27,8 @@
             android:paddingLeft="@dimen/padding0dp"
             android:paddingRight="@dimen/padding0dp"
             app:icon="@drawable/settings_arrow_back"
-            app:iconTint="@color/settings_text_title" />
+            app:iconTint="@color/settings_text_title"
+            tools:ignore="TouchTargetSizeCheck" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
