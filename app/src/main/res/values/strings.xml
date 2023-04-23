@@ -12,4 +12,9 @@
     <string name="app_settings_doc" translatable="false">Пользовательское соглашение</string>
     <!--Для экранов отсутствующих в задании-->
     <string name="text_home" translatable="false">Home</string>
+    <!--Для экрана поиска-->
+    <string name="title_finder" translatable="false">Поиск</string>
+    <string name="no_records" translatable="false">no_records</string>
+    <string name="text_in_box" translatable="false">Поиск</string>
+    <string name="no_add" translatable="false">no_add</string>
 </resources>

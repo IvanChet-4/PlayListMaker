@@ -1,26 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FinderActivity">
-
-    <Button
-        android:id="@+id/button_finder_Home"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="14dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".FinderActivity"
+    >
+    <!--Заголовок-->
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/white"
-        android:text="@string/text_home"
-        android:textAllCaps="false"
-        android:textColor="@color/main_text_PLM"
+        android:layout_gravity="start"
+        android:text="@string/title_finder"
+        android:textColor="@color/black"
         android:textSize="@dimen/text22sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="150dp" />
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/ys_display_medium"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            
+            android:background="@color/settings_finder"
+            android:backgroundTint="@color/settings_finder"
+            android:hint="@string/text_in_box"
+            android:textSize="@dimen/text16sp"
+            android:layout_weight="100.0" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/no_records"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_add" />
+        <Button
+            android:id="@+id/button_finder_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_home"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        app:menu="@menu/menu_finder"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"/>
+</LinearLayout>

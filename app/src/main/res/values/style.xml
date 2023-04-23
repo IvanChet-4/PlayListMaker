@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Кнопки главного экрана-->
-    <style name="Theme.Button.main_activity" parent="Theme.MyApp.DayNight">
+    <style name="Theme.Button.main_activity" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>

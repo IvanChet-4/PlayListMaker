@@ -20,8 +20,6 @@ class SettingsActivity : AppCompatActivity() {
 
         val settingsConfirm = findViewById<Button>(R.id.button_settings_Confirm)
 
-
-
         settingsHome.setOnClickListener {
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)

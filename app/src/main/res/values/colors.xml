@@ -20,4 +20,5 @@
     <color name="settings_text_PLM">#000000</color>
     <color name="settings_image_PLM">#AEAFB4</color>
     <color name="settings_button_PLM">#FFFFFF</color>
+    <color name="settings_finder">#E6E8EB</color>
 </resources>
