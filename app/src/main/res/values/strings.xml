@@ -17,4 +17,10 @@
     <string name="no_records" translatable="false">no_records</string>
     <string name="text_in_box" translatable="false">Поиск</string>
     <string name="no_add" translatable="false">no_add</string>
+    <!--For Settings-->
+    <string name="site_course_Android" translatable="false">Привет! Вот ссылка на курс по Андройд разработке от Яндекс практикума https://practicum.yandex.ru/learn/android-developer/courses/</string>
+    <string name="message" translatable="false">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
+    <string name="subj_mes" translatable="false">Subject-Тема-message</string>
+    <string name="urlConfirm" translatable="false">https://yandex.ru/legal/practicum_offer/</string>
+    <string name="myMail" translatable="false">isc47@bk.ru</string>
 </resources>

@@ -29,7 +29,7 @@ class SettingsActivity : AppCompatActivity() {
         shareToOtherApp.setOnClickListener {
             val sendIntent: Intent = Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, "Привет! Вот ссылка на мое приложение: https://iv-4.ru/login")
+                putExtra(Intent.EXTRA_TEXT, getString(R.string.site_course_Android))
                 type = "text/plain"
             }
             val shareIntent = Intent.createChooser(sendIntent, null)
@@ -38,19 +38,18 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         writeToSupport.setOnClickListener {
-            val message = "Сообщение разработчикам и разработчицам приложения Playlist Maker"
             val shareIntent = Intent(Intent.ACTION_SENDTO)
             shareIntent.data = Uri.parse("mailto:")
-            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("isc47@bk.ru"))
-            shareIntent.putExtra(Intent.EXTRA_TEXT, message)
+            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.myMail)))
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.subj_mes))
+            shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.message))
             startActivity(shareIntent)
             finish()
         }
 
         settingsConfirm.setOnClickListener {
-            val urlConfirm = "https://yandex.ru/legal/practicum_offer/"
             val openSite = Intent(Intent.ACTION_VIEW);
-            openSite.setData(Uri.parse(urlConfirm));
+            openSite.setData(Uri.parse(getString(R.string.urlConfirm)));
             startActivity(openSite);
             finish()
         }
