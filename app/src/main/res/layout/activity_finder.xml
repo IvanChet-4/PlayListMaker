@@ -67,27 +67,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="@string/text_home"
+            android:text="@string/backToHome"
             android:textColor="@color/black"
             android:gravity="start"
+            android:textAllCaps="false"
             />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="@string/text_home"
-            android:textColor="@color/black"
-            android:gravity="center"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:gravity="end"
-            android:text="@string/text_home"
-            android:textColor="@color/black" />
     </TableRow>
 
 </LinearLayout>

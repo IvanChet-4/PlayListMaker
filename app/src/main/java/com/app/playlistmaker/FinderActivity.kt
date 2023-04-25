@@ -20,9 +20,22 @@ class FinderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finder)
 
+
         val linearLayout = findViewById<LinearLayout>(R.id.container)
         val inputEditText = findViewById<EditText>(R.id.inputEditText)
         val clearButton = findViewById<ImageView>(R.id.clearIcon)
+
+        val finderToHome = findViewById<Button>(R.id.button_finder_Home)
+        finderToHome.setOnClickListener {
+            val displayIntent = Intent(this, MainActivity::class.java)
+            startActivity(displayIntent)
+            finish()
+        }
+
+
+
+
+
 
         clearButton.setOnClickListener {
             inputEditText.setText("")
