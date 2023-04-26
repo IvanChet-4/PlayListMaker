@@ -14,6 +14,7 @@
     <color name="main_text_title_PLM">#FFFFFF</color>
     <color name="main_text_PLM">#1A1B22</color>
     <!--Для второго экрана-->
+    <color name="gray">#E6E8EB</color>
     <color name="settings_background">#F5F5F5</color>
     <color name="settings_background_button">#FFFFFF</color>
     <color name="settings_text_title">#1A1B22</color>
@@ -23,5 +24,6 @@
     <color name="settings_finder1">#E6E8EB</color>
     <color name="settings_finder2">#AEAFB4</color>
 
-    <color name="prime_neutral">#AEAFB4</color>
+    <color name="red">#ff0000</color>
+
 </resources>
