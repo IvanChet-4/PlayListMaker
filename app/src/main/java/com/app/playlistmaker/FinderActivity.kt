@@ -14,8 +14,6 @@ import android.widget.Button
 import android.widget.ImageView
 
 class FinderActivity : AppCompatActivity() {
-    //https://github.com/IvanChet-4/PlayListMaker/commit/bd3467f5a187e52233b193d47b9b3d9b0a11475d#diff-25c10ae84a45f48035361880f66f01b31ca844964fb377e7f764b79cd6a3dc2c
-    //https://github.com/IvanChet-4/PlayListMaker/pull/2
        private val KEY_TEXT = ""
         @SuppressLint("MissingInflatedId")
         override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +21,9 @@ class FinderActivity : AppCompatActivity() {
             setContentView(R.layout.activity_finder)
 
             val inputEditText = findViewById<EditText>(R.id.inputEditText)
+            //inputEditText.setBackground(getResources().getDrawable(R.drawable.search_back1));
+
+
             val clearButton = findViewById<ImageView>(R.id.clearIcon)
 
             clearButton.setOnClickListener {
