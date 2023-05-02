@@ -32,6 +32,7 @@
         android:visibility="gone"
         android:contentDescription="@string/icon_find" />
     <EditText
+        style="@style/EditText_Search"
         android:id="@+id/inputEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,15 +42,14 @@
         android:textSize="@dimen/text16sp"
         android:hint="@string/app_find"
         android:textColor="@color/settings_finder2"
-        android:paddingTop="@dimen/padding16dp"
-        android:paddingBottom="@dimen/padding16dp"
+        android:paddingTop="@dimen/padding8_5dp"
+        android:paddingBottom="@dimen/padding8_5dp"
         android:drawableStart="@drawable/finder"
         android:drawablePadding="@dimen/padding9dp"
         android:maxLines="1"
         android:maxLength="15"
         android:autofillHints="username"
-        android:layout_marginBottom="@dimen/margin24dp"
-        android:background="@drawable/search_back1" />
+        android:layout_marginBottom="@dimen/margin24dp" />
     </FrameLayout>
 
     <ListView
