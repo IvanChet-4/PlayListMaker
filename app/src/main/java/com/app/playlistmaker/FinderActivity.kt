@@ -21,18 +21,14 @@ class FinderActivity : AppCompatActivity() {
             setContentView(R.layout.activity_finder)
 
             val inputEditText = findViewById<EditText>(R.id.inputEditText)
-            //inputEditText.setBackground(getResources().getDrawable(R.drawable.search_back1));
-
-
             val clearButton = findViewById<ImageView>(R.id.clearIcon)
 
             clearButton.setOnClickListener {
-                inputEditText.setText("")
                 val keyboard = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
                 keyboard.hideSoftInputFromWindow(inputEditText.windowToken, 0)
                 inputEditText.clearFocus()
+                inputEditText.setText("")
             }
-
 
             val simpleTextWatcher = object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int){

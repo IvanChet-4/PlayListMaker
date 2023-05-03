@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
@@ -23,33 +24,33 @@
     <FrameLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/clearIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|center"
-        android:src="@drawable/closeicon"
-        android:visibility="gone"
-        android:contentDescription="@string/icon_find" />
-    <EditText
-        style="@style/EditText_Search"
-        android:id="@+id/inputEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:paddingStart="@dimen/padding13dp"
-        android:paddingEnd="@dimen/padding0dp"
-        android:textSize="@dimen/text16sp"
-        android:hint="@string/app_find"
-        android:textColor="@color/settings_finder2"
-        android:paddingTop="@dimen/padding8_5dp"
-        android:paddingBottom="@dimen/padding8_5dp"
-        android:drawableStart="@drawable/finder"
-        android:drawablePadding="@dimen/padding9dp"
-        android:maxLines="1"
-        android:maxLength="15"
-        android:autofillHints="username"
-        android:layout_marginBottom="@dimen/margin24dp" />
+        <EditText
+            android:id="@+id/inputEditText"
+            style="@style/EditText_Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="username"
+            android:drawableStart="@drawable/finder"
+            android:drawablePadding="@dimen/padding9dp"
+            android:hint="@string/app_find"
+            android:inputType="text"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding13dp"
+            android:paddingTop="@dimen/padding8_5dp"
+            android:paddingEnd="@dimen/padding0dp"
+            android:paddingBottom="@dimen/padding8_5dp"
+            android:textColor="@color/settings_finder2"
+            android:textSize="@dimen/text16sp" />
+        <ImageView
+            android:id="@+id/clearIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@string/icon_find"
+            android:visibility="gone"
+            android:scaleType="center"
+            app:srcCompat="@drawable/closeicon" />
     </FrameLayout>
 
     <ListView

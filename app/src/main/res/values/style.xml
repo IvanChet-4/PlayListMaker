@@ -37,11 +37,7 @@
     <style name="Theme.Button.activity_settings_arrow" parent="Theme.MyApp.DayNight">
     </style>
 
-<!--For finder_activity-->
-    <style name="clearIcon">
-        <item name="android:gravity">right</item>
-        <item name="color">@color/red</item>
-    </style>
+<!--Для экрана поиска-->
     <style name="Button_Search">
         <item name="android:textColor">@color/black</item>
         <item name="android:backgroundTint">@color/settings_background_button</item>
